@@ -4,7 +4,7 @@ public extension DataModels {
     public struct Proposal: Decodable {
         public let id: Int?
         public let title: String?
-        public let status: Status
+        public let status: Status?
         public let summary: String?
         public let authors: [Person]?
         public let warnings: [Warning]?
@@ -33,7 +33,7 @@ public extension DataModels {
             
             self.id                 = try container.decodeIfPresent(Int.self, forKey: .id)
             self.title              = try container.decodeIfPresent(String.self, forKey: .title)
-            self.status             = (try container.decodeIfPresent(Status.self, forKey: .status))!
+            self.status             = try container.decodeIfPresent(Status.self, forKey: .status)
             self.summary            = try container.decodeIfPresent(String.self, forKey: .summary)
             self.authors            = try container.decodeIfPresent([Person].self, forKey: .authors)
             self.warnings           = try container.decodeIfPresent([Warning].self, forKey: .warnings)
