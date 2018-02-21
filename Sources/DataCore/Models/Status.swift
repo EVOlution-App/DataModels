@@ -3,10 +3,10 @@ import Config
 
 public extension DataModels {
     public struct Status: Decodable {
-        let version: String?
-        let state: String?
-        let start: Date?
-        let end: Date?
+        public let version: String?
+        public let state: String?
+        public let start: Date?
+        public let end: Date?
         
         enum Keys: String, CodingKey {
             case version

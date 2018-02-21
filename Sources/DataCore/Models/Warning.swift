@@ -3,9 +3,9 @@ import Config
 
 public extension DataModels {
     public struct Warning: Codable {
-        let message: String?
-        let stage: String?
-        let kind: String?
+        public let message: String?
+        public let stage: String?
+        public let kind: String?
         
         enum Keys: String, CodingKey {
             case message

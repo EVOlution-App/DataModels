@@ -1,9 +1,9 @@
 import Foundation
 
 public extension DataModels {
-    struct Person: Decodable {
-        let name: String?
-        let link: String?
+    public struct Person: Decodable {
+        public let name: String?
+        public let link: String?
         
         enum Keys: String, CodingKey {
             case name

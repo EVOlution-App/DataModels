@@ -3,14 +3,14 @@ import Config
 
 public extension DataModels {
     public struct Bug: Codable {
-        let id: String?
-        let status: String?
-        let updated: Date?
-        let title: String?
-        let link: String?
-        let radar: String?
-        let assignee: String?
-        let resolution: String?
+        public let id: String?
+        public let status: String?
+        public let updated: Date?
+        public let title: String?
+        public let link: String?
+        public let radar: String?
+        public let assignee: String?
+        public let resolution: String?
         
         enum Keys: String, CodingKey {
             case id

@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "DataModels",
+    name: "DataCore",
     products: [
         .library(
             name: "DataCore",

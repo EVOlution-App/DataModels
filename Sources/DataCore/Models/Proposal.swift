@@ -2,17 +2,17 @@ import Foundation
 
 public extension DataModels {
     public struct Proposal: Decodable {
-        let id: Int?
-        let title: String?
-        let status: Status
-        let summary: String?
-        let authors: [Person]?
-        let warnings: [Warning]?
-        let link: String?
-        let reviewManager: Person?
-        let sha: String?
-        let bugs: [Bug]?
-        let implementation: [Implementation]?
+        public let id: Int?
+        public let title: String?
+        public let status: Status
+        public let summary: String?
+        public let authors: [Person]?
+        public let warnings: [Warning]?
+        public let link: String?
+        public let reviewManager: Person?
+        public let sha: String?
+        public let bugs: [Bug]?
+        public let implementation: [Implementation]?
         
         enum Keys: String, CodingKey {
             case status

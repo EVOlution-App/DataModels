@@ -2,10 +2,10 @@ import Foundation
 
 public extension DataModels {
     public struct Implementation: Decodable {
-        let id: String?
-        let type: String?
-        let repository: String?
-        let account: String?
+        public let id: String?
+        public let type: String?
+        public let repository: String?
+        public let account: String?
         
         enum StatusKeys: String, CodingKey {
             case id
