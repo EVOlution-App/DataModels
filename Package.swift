@@ -7,16 +7,14 @@ let package = Package(
     name: "DataModels",
     products: [
         .library(
-            name: "DataModels",
-            targets: ["DataModels"]),
+            name: "DataCore",
+            targets: ["DataCore"]),
         ],
     targets: [
-        .target(name: "Config"),
         .target(
-            name: "DataModels",
-            dependencies: ["Config"]),
+            name: "DataCore"),
         .testTarget(
             name: "datamodelsTests",
-            dependencies: ["DataModels"]),
+            dependencies: ["DataCore"]),
         ]
 )
