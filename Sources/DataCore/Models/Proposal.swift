@@ -2,7 +2,7 @@ import Foundation
 
 public extension DataModels {
     public struct Proposal: Decodable {
-        public let id: Int?
+        public let id: String?
         public let title: String?
         public let status: Status?
         public let summary: String?
@@ -31,7 +31,7 @@ public extension DataModels {
         public init(from decoder: Decoder) throws {
             let container           = try decoder.container(keyedBy: Keys.self)
             
-            self.id                 = try container.decodeIfPresent(Int.self, forKey: .id)
+            self.id                 = try container.decodeIfPresent(String.self, forKey: .id)
             self.title              = try container.decodeIfPresent(String.self, forKey: .title)
             self.status             = try container.decodeIfPresent(Status.self, forKey: .status)
             self.summary            = try container.decodeIfPresent(String.self, forKey: .summary)
