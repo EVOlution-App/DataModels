@@ -11,7 +11,7 @@ public extension DataModels {
         public let link: String?
         public let reviewManager: Person?
         public let sha: String?
-        public let bugs: [Bug]?
+        public let trackingBugs: [Bug]?
         public let implementation: [Implementation]?
     }
 }
