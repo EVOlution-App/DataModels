@@ -1,5 +1,4 @@
 import Foundation
-import Config
 
 public extension DataModels {
     public struct Status: Decodable {
