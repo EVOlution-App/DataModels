@@ -4,17 +4,32 @@
 import PackageDescription
 
 let package = Package(
-    name: "DataCore",
+    name: "DataModels",
     products: [
         .library(
-            name: "DataCore",
-            targets: ["DataCore"]),
+            name: "Main",
+            targets: ["Executor"]),
         ],
+    dependencies: [
+        .package(url: "../requester", .branch("master")),
+        .package(url: "https://github.com/OpenKitten/Meow.git", .upToNextMajor(from: "1.0.0")),
+    ],
     targets: [
         .target(
-            name: "DataCore"),
+            name: "DataModels",
+            dependencies: [
+                "Meow"
+            ]
+        ),
+        .target(
+            name: "Executor",
+            dependencies: [
+                "Requester",
+                "DataModels"
+            ]
+        ),
         .testTarget(
             name: "datamodelsTests",
-            dependencies: ["DataCore"]),
+            dependencies: ["DataModels"]),
         ]
 )

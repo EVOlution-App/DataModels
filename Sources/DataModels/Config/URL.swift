@@ -1,9 +1,9 @@
 import Foundation
 
-public extension Config {
+extension Config {
     struct URL {
         static var data: String {
-            return "https://data.swift-evolution.io"
+            return "https://data.swift.org"
         }
         
         static var githubUser: String {
