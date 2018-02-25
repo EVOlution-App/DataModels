@@ -7,27 +7,21 @@ let package = Package(
     name: "DataModels",
     products: [
         .library(
-            name: "Main",
-            targets: ["Executor"]),
+            name: "DataModels",
+            targets: ["DataModelsCore"]),
         ],
     dependencies: [
         .package(url: "https://github.com/OpenKitten/Meow.git", .upToNextMajor(from: "1.0.0")),
     ],
     targets: [
         .target(
-            name: "DataModels",
+            name: "DataModelsCore",
             dependencies: [
                 "Meow"
             ]
         ),
-        .target(
-            name: "Executor",
-            dependencies: [
-                "DataModels"
-            ]
-        ),
         .testTarget(
             name: "datamodelsTests",
-            dependencies: ["DataModels"]),
+            dependencies: ["DataModelsCore"]),
         ]
 )
