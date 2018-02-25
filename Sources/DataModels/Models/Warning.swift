@@ -1,5 +1,4 @@
 import Foundation
-
 import Meow
 
 public final class Warning: Model {

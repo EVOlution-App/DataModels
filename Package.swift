@@ -11,7 +11,6 @@ let package = Package(
             targets: ["Executor"]),
         ],
     dependencies: [
-        .package(url: "../requester", .branch("master")),
         .package(url: "https://github.com/OpenKitten/Meow.git", .upToNextMajor(from: "1.0.0")),
     ],
     targets: [
@@ -24,7 +23,6 @@ let package = Package(
         .target(
             name: "Executor",
             dependencies: [
-                "Requester",
                 "DataModels"
             ]
         ),

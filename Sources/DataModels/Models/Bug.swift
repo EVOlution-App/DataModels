@@ -1,5 +1,4 @@
 import Foundation
-import RequesterCore
 import Meow
 
 public final class Bug: Model {

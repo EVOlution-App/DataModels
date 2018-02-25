@@ -47,15 +47,6 @@
         }
       },
       {
-        "package": "Requester",
-        "repositoryURL": "/Users/unnamedd/workspace/evolution/requester",
-        "state": {
-          "branch": "master",
-          "revision": "fbdef981125507149626e30466c3f64dc2ae740c",
-          "version": null
-        }
-      },
-      {
         "package": "Schrodinger",
         "repositoryURL": "https://github.com/OpenKitten/Schrodinger.git",
         "state": {
