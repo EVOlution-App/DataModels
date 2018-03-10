@@ -14,6 +14,8 @@ public final class Bug: Model {
     public var radar: String?
     public var assignee: String?
     public var resolution: String?
+    
+    public init() {}
 }
 
 extension Bug: CustomStringConvertible {

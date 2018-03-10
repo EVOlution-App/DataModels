@@ -6,7 +6,7 @@ public final class Proposal: Model {
     public var _createdAt = Date()
     public var _updatedAt = Date()
     
-    public var id: Int
+    public var id: Int?
     public var title: String?
     public var status: Reference<Status>?
     public var summary: String?
@@ -17,10 +17,16 @@ public final class Proposal: Model {
     public var sha: String?
     public var bugs: [Reference<Bug>]?
     public var implementation: [Reference<Implementation>]?
+    
+    public init() {}
 }
 
 extension Proposal: CustomStringConvertible {
     public var description: String {
-        return String(format: "SE-%04i", self.id)
+        guard let id = self.id else {
+            return "SE-NNNN"
+        }
+
+        return String(format: "SE-%04i", id)
     }
 }

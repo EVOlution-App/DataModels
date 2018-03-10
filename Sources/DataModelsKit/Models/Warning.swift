@@ -9,6 +9,8 @@ public final class Warning: Model {
     public var message: String?
     public var stage: String?
     public var kind: String?
+    
+    public init() {}
 }
 
 

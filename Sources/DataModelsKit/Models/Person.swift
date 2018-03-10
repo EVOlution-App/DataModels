@@ -8,6 +8,8 @@ public final class Person: Model {
     
     public var name: String?
     public var link: String?
+    
+    public init() {}
 }
 
 

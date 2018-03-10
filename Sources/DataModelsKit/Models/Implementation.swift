@@ -10,4 +10,6 @@ public final class Implementation: Model {
     public var type: String?
     public var repository: String?
     public var account: String?
+    
+    public init() {}
 }
