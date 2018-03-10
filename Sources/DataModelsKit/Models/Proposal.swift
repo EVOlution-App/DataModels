@@ -16,7 +16,7 @@ public final class Proposal: Model {
     public var reviewManager: Reference<Person>?
     public var sha: String?
     public var bugs: [Reference<Bug>]?
-    public var implementation: [Reference<Implementation>]?
+    public var implementations: [Reference<Implementation>]?
     
     public init() {}
 }
