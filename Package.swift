@@ -8,20 +8,20 @@ let package = Package(
     products: [
         .library(
             name: "DataModels",
-            targets: ["DataModelsCore"]),
+            targets: ["DataModelsKit"]),
         ],
     dependencies: [
         .package(url: "https://github.com/OpenKitten/Meow.git", .upToNextMajor(from: "1.0.0")),
     ],
     targets: [
         .target(
-            name: "DataModelsCore",
+            name: "DataModelsKit",
             dependencies: [
                 "Meow"
             ]
         ),
         .testTarget(
             name: "datamodelsTests",
-            dependencies: ["DataModelsCore"]),
+            dependencies: ["DataModelsKit"]),
         ]
 )
