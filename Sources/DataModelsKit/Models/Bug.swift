@@ -8,7 +8,7 @@ public final class Bug: Model {
     
     public var id: String?
     public var status: String?
-    public var updated: String?
+    public var updated: Date?
     public var title: String?
     public var link: String?
     public var radar: String?

@@ -8,8 +8,8 @@ public final class Status: Model {
     
     public var version: String?
     public var state: String?
-    public var start: String?
-    public var end: String?
+    public var start: Date?
+    public var end: Date?
     
     public init() {}
 }
