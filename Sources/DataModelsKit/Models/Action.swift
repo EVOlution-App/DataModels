@@ -7,6 +7,7 @@ public enum ActionType: String, Codable {
     case watchProposal
     case proposalCreated
     case authorAdded
+    case reviewManagerDefined
     case reviewManagerChanged
     case reviewManagerAdded
     case statusCreated
