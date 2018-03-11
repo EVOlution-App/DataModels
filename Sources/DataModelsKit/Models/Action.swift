@@ -12,10 +12,12 @@ public enum ActionType: String, Codable {
     case reviewManagerAdded
     case statusCreated
     case statusChanged
+    case bugAdded
     case bugOpen
     case bugResolved
     case bugClosed
     case bugInProgress
+    case implmentationAdded
 }
 
 public enum RelationType: String, Codable {
