@@ -2,10 +2,14 @@ import Foundation
 import Meow
 
 public enum ActionType: String, Codable {
-    case star
-    case follow
-    case watch
-    case creation
+    case followPerson
+    case starProposal
+    case watchProposal
+    case proposalCreated
+    case authorAdded
+    case reviewManagerChanged
+    case reviewManagerAdded
+    case statusCreated
     case statusChanged
     case bugOpen
     case bugResolved
