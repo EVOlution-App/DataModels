@@ -8,7 +8,7 @@ public final class Proposal: Model {
     
     public var id: Int?
     public var title: String?
-    public var status: Status?
+    public var status: Reference<Status>?
     public var summary: String?
     public var authors: [Reference<Person>]?
     public var warnings: [Warning]?

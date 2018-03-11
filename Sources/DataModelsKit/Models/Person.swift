@@ -13,6 +13,3 @@ public final class Person: Model {
     
     public init() {}
 }
-
-
-
