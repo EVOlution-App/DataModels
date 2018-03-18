@@ -1,6 +1,6 @@
 # EVO App - Data Models
 
-This project will be have the models used by backend components from Evolution App.
+DataModels is the project which will allow other components to access the database from EVO App. 
 
 ## Requirements
 - Swift 4.1
