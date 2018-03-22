@@ -9,7 +9,7 @@ public struct MQ {
         
         public var relationID: String?
         public var relationType: RelationType?
-    }
     
-    public init() {}
+	    public init() {}
+    }
 }
