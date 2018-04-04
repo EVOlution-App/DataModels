@@ -29,8 +29,8 @@ public enum RelationType: String, Codable {
 
 public final class Action: Model {
     public var _id = ObjectId()
-    public var _createdAt = Date()
-    public var _updatedAt = Date()
+    public var createdAt = Date()
+    public var updatedAt = Date()
     
     public var user: Reference<Person>?
 

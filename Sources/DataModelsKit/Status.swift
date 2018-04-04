@@ -3,8 +3,8 @@ import Meow
 
 public final class Status: Model {
     public var _id = ObjectId()
-    public var _createdAt = Date()
-    public var _updatedAt = Date()
+    public var createdAt = Date()
+    public var updatedAt = Date()
     
     public var version: String?
     public var state: String?
