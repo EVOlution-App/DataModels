@@ -7,7 +7,7 @@ public final class Device: Model {
     public var updatedAt: Date?
 
     public var identifier: String?
-    public var vendor:     String?
+    public var owner:      String?
     public var test:       Bool = false
     public var subscribed: Bool = true
     public var os:         String?
