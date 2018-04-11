@@ -12,7 +12,6 @@ public final class Device: Model {
     public var subscribed: Bool = true
     public var os:         String?
     public var model:      String?
-    public var tags:       [Tag]?
     public var language:   String?
     public var app:        Reference<App>?
 
