@@ -6,6 +6,7 @@ public final class Tag: Model {
     
     public var name: String?
     public var identifier: ActionType?
+    public var app: Reference<App>?
     public var createdAt: Date?
     public var updatedAt: Date?
 
