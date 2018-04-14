@@ -10,6 +10,7 @@ public final class Notification: Model {
     public var delivered: Bool = false
     public var category : ActionType?
     public var payload  : Document?
+    public var app      : Reference<App>?
     
     public var createdAt: Date?
     
