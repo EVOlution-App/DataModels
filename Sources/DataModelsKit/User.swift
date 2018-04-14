@@ -6,7 +6,7 @@ public final class User: Model {
     public var createdAt    : Date?
     public var updatedAt    : Date?
     
-    public var identifier   : String?
+    public var ckID         : String?
     public var tags         : [Reference<Tag>]?
     
     public init() {}
