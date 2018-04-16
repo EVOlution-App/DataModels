@@ -9,7 +9,6 @@ public final class Device: Model {
     public var token        : String?
     public var user         : Reference<User>?
     public var test         : Bool = false
-    public var subscribed   : Bool = true
     public var os           : String?
     public var model        : String?
     public var language     : String?
