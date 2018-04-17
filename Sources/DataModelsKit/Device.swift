@@ -10,6 +10,7 @@ public final class Device: Model {
     public var user         : Reference<User>?
     public var test         : Bool = false
     public var os           : String?
+    public var appVersion   : String?
     public var model        : String?
     public var language     : String?
     public var app          : Reference<App>?
