@@ -4,10 +4,10 @@
 import PackageDescription
 
 let package = Package(
-    name: "DataModels",
+    name: "DataModelsKit",
     products: [
         .library(
-            name: "DataModels",
+            name: "DataModelsKit",
             targets: ["DataModelsKit"]),
         ],
     dependencies: [
@@ -16,9 +16,7 @@ let package = Package(
     targets: [
         .target(
             name: "DataModelsKit",
-            dependencies: [
-                "Meow"
-            ]
+            dependencies: ["Meow"]
         ),
         .testTarget(
             name: "datamodelsTests",
