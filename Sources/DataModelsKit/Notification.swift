@@ -11,8 +11,7 @@ public final class Notification: Model {
     public var relation     : RelationType?
 
     // OneSignal values
-    public var onesignal    : String?
-    public var recipients   : Int?
+    public var onesignal    : [OneSignal]?
     
     public var createdAt: Date?
     
