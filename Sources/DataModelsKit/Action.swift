@@ -17,7 +17,7 @@ public enum ActionType: String, Codable {
     case bugResolved
     case bugClosed
     case bugInProgress
-    case implmentationAdded
+    case implementationAdded
 }
 
 public enum RelationType: String, Codable {
