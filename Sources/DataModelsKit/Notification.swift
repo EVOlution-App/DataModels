@@ -1,16 +1,18 @@
 import Foundation
 import Meow
+import BSON
 
 public final class Notification: Model {
     public var _id = ObjectId()
-    
-    public var title    : String?
-    public var subtitle : String?
-    public var body     : String?
-    public var delivered: Bool = false
-    public var category : ActionType?
-    public var payload  : Document?
-    public var app      : Reference<App>?
+
+    public var app          : Reference<App>?
+    public var category     : ActionType?
+    public var object       : ObjectId?
+    public var relation     : RelationType?
+
+    // OneSignal values
+    public var onesignal    : String?
+    public var recipients   : Int?
     
     public var createdAt: Date?
     
