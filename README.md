@@ -3,7 +3,7 @@
 DataModels is the project which will allow other components to access the database from EVO App. 
 
 ## Requirements
-- Swift 4.1
+- Swift 4.0.3
 - Xcode 9+
 
 ## Credits
