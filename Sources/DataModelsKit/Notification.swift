@@ -11,7 +11,7 @@ public final class Notification: Model {
     public var relation     : RelationType?
 
     // OneSignal values
-    public var onesignal    : [OneSignal]?
+    public var oneSignal    : [OneSignal]?
     
     public var createdAt: Date?
     
