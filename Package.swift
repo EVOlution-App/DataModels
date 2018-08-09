@@ -11,7 +11,7 @@ let package = Package(
             targets: ["DataModelsKit"]),
         ],
     dependencies: [
-        .package(url: "https://github.com/OpenKitten/Meow.git", .upToNextMajor(from: "1.0.0")),
+        .package(url: "https://github.com/OpenKitten/Meow.git", .branch("master/2.0")),
     ],
     targets: [
         .target(
