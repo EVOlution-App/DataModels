@@ -6,53 +6,62 @@
         "repositoryURL": "https://github.com/OpenKitten/BSON.git",
         "state": {
           "branch": null,
-          "revision": "3edad325da31095c9d54d04c6125f1fec1f3c5bf",
-          "version": "5.2.3"
-        }
-      },
-      {
-        "package": "Cheetah",
-        "repositoryURL": "https://github.com/OpenKitten/Cheetah.git",
-        "state": {
-          "branch": null,
-          "revision": "801f4fa278670719bec074b708241878ad5fb25e",
-          "version": "2.0.2"
-        }
-      },
-      {
-        "package": "CryptoKitten",
-        "repositoryURL": "https://github.com/OpenKitten/CryptoKitten.git",
-        "state": {
-          "branch": null,
-          "revision": "bf7a4d6dbd6f4bbd96ae620101239446d2cdd3f9",
-          "version": "0.2.3"
-        }
-      },
-      {
-        "package": "Meow",
-        "repositoryURL": "https://github.com/OpenKitten/Meow.git",
-        "state": {
-          "branch": null,
-          "revision": "e1414b2e8d1e2ad0276849ecee6ea6c339682538",
-          "version": "1.0.0"
+          "revision": "a41d350d00d111c51007399329607d5c480994d2",
+          "version": "7.0.18"
         }
       },
       {
         "package": "MongoKitten",
         "repositoryURL": "https://github.com/OpenKitten/MongoKitten.git",
         "state": {
-          "branch": null,
-          "revision": "099b684b76402cf048ebf12bd5a11afe2979c7a3",
-          "version": "4.1.2"
+          "branch": "master/6.0",
+          "revision": "288f16afaa85b0982cf794217c6cdbdb46689ebe",
+          "version": null
         }
       },
       {
-        "package": "Schrodinger",
-        "repositoryURL": "https://github.com/OpenKitten/Schrodinger.git",
+        "package": "DNSClient",
+        "repositoryURL": "https://github.com/OpenKitten/NioDNS.git",
         "state": {
           "branch": null,
-          "revision": "d7030fe0a4a6eeddc02044650a8b409a4f57365a",
-          "version": "1.0.1"
+          "revision": "ea98c8f47c6bd3c54803f417111ddad48595f5d6",
+          "version": "2.0.5"
+        }
+      },
+      {
+        "package": "swift-log",
+        "repositoryURL": "https://github.com/apple/swift-log.git",
+        "state": {
+          "branch": null,
+          "revision": "74d7b91ceebc85daf387ebb206003f78813f71aa",
+          "version": "1.2.0"
+        }
+      },
+      {
+        "package": "swift-metrics",
+        "repositoryURL": "https://github.com/apple/swift-metrics.git",
+        "state": {
+          "branch": null,
+          "revision": "708b960b4605abb20bc55d65abf6bad607252200",
+          "version": "2.0.0"
+        }
+      },
+      {
+        "package": "swift-nio",
+        "repositoryURL": "https://github.com/apple/swift-nio.git",
+        "state": {
+          "branch": null,
+          "revision": "c5fa0b456524cd73dc3ddbb263d4f46c20b86ca3",
+          "version": "2.17.0"
+        }
+      },
+      {
+        "package": "swift-nio-ssl",
+        "repositoryURL": "https://github.com/apple/swift-nio-ssl.git",
+        "state": {
+          "branch": null,
+          "revision": "10e0e17dd47b594c3d864a063f343d716e33e5c1",
+          "version": "2.7.3"
         }
       }
     ]

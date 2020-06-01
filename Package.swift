@@ -4,18 +4,24 @@ import PackageDescription
 
 let package = Package(
     name: "DataModelsKit",
+    platforms: [
+        .macOS(.v10_14),
+        
+    ],
     products: [
         .library(
             name: "DataModelsKit",
             targets: ["DataModelsKit"]),
         ],
     dependencies: [
-        .package(url: "https://github.com/openkitten/Meow.git", .branch("master/2.0")),
+        .package(url: "https://github.com/OpenKitten/MongoKitten.git", .branch("master/6.0")),
     ],
     targets: [
         .target(
             name: "DataModelsKit",
-            dependencies: ["Meow"]
+            dependencies: [
+                .product(name: "Meow", package: "MongoKitten")
+            ]
         ),
         .testTarget(
             name: "datamodelsTests",
