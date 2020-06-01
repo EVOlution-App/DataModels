@@ -6,7 +6,6 @@ let package = Package(
     name: "DataModelsKit",
     platforms: [
         .macOS(.v10_14),
-        
     ],
     products: [
         .library(
