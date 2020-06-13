@@ -11,6 +11,7 @@ public enum State: String, Codable {
     case acceptedWithRevisions  = ".acceptedWithRevisions"
     case rejected               = ".rejected"
     case implemented            = ".implemented"
+    case previewing             = ".previewing"
     case error                  = ".error"
 }
 
@@ -28,6 +29,7 @@ extension State: CustomStringConvertible {
         case .rejected:                 return "Rejected"
         case .implemented:              return "Implemented"
         case .error:                    return "Error"
+        case .previewing:               return "Previewing"
         }
     }
 }
